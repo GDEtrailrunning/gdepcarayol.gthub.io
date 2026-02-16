@@ -53,7 +53,7 @@ const myChartLine2 = new Chart(document.getElementById('myChart-line-2'), {
 
 function actualizarDiasRestantes() {
   // Fecha objetivo fija
-  const objetivoDate = new Date('2026-02-14');
+  const objetivoDate = new Date('2026-02-21');
   const currentDate = new Date();
   const timeDiff = objetivoDate - currentDate;
   const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
@@ -101,3 +101,4 @@ function actualizarDiasRestantes() {
   document.getElementById("Semana 2").appendChild(video4);
 
 });
+
