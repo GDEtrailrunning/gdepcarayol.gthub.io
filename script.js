@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  //actualizarDiasRestantes();
-  //setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
+  actualizarDiasRestantes();
+  setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
   // Datos para el gráfico de líneas
 const dataLine1 = {
   labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5'], // Etiquetas de los días], // Etiquetas de los días], // Etiquetas de los días
@@ -53,7 +53,7 @@ const myChartLine2 = new Chart(document.getElementById('myChart-line-2'), {
 
 function actualizarDiasRestantes() {
   // Fecha objetivo fija
-  const objetivoDate = new Date('2026-02-14');
+  const objetivoDate = new Date('2026-03-14');
   const currentDate = new Date();
   const timeDiff = objetivoDate - currentDate;
   const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
@@ -101,3 +101,4 @@ function actualizarDiasRestantes() {
   document.getElementById("Semana 2").appendChild(video4);
 
 });
+
